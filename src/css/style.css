@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* html5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,
+section {
+    display: block;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #111
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #986dff;
+    border-radius: 8px
+}
+
+/* Path: src\css\style.css */
+
+body {
+    background-color: #111;
+    font-family: "Archivo";
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fefefe;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 12px;
+}
+
+.cont {
+    max-width: 1140px;
+    margin: 0 auto
+}
+
+/* Hero */
+
+
+#hero {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0 0 100px 100px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero span {
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-89deg, #111, #986dff);
+}
+
+#hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#hero-container-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 4rem;
+}
+
+#hero-container-text h1 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#hero-container-text p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+/* About */
+
+
+.About {
+    padding: 0px 50px;
+    background-color: #111;
+    position: relative
+}
+
+@media screen and (max-width: 992px) {
+    .About {
+        padding: 100px 20px 0px 20px
+    }
+}
+
+.text1 {
+    text-align: center;
+    padding: 4rem;
+    gap: 24px;
+}
+
+.text1 h2 {
+    font-size:  3rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.text1 p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.text1 img {
+    width: 800px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.text1 iframe {
+    width: 800px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 24px;
+}
+
+
+.sos {
+    padding: 96px 48px;
+    text-align: center;
+    background-color: #111
+}
+
+.sos .cont h2 {
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500
+}
+
+@media screen and (max-width: 992px) {
+    .sos {
+        padding: 48px 24px
+    }
+}
+
+.card-sos {
+    margin: 24px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left
+}
+
+.bord {
+    border: 1px solid #9ca3af
+}
+
+.bord:hover {
+    border: 1px solid #9ca3af
+}
+
+.card-sos article {
+    background-color: #151515;
+    height: auto;
+    padding: 32px;
+    margin: 8px;
+    flex-basis: calc(33% - 20px);
+    flex-grow: 1;
+    border: 1px solid #111;
+    transition: 1s all ease;
+}
+
+.card-sos article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-sos article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.card-sos article h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.card-sos article p {
+    line-height: 24px;
+    margin: 24px 0px;
+    color: #9ca3af;
+    line-height: 3.2rem;
+    font-size: 1.8rem
+}
+
+.card-sos article a {
+    color: #986dff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: block;
+    margin-top: 24px;
+}
+
+.s-art {
+    padding: 0px 50px;
+    background-color: #111;
+    position: relative
+}
+
+@media screen and (max-width: 992px) {
+    .s-art {
+        padding: 100px 20px 0px 20px
+    }
+}
+
+.art {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    gap: 24px;
+    overflow: hidden;
+    width: 100%
+}
+
+.art img {
+    width: 650px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.art p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
